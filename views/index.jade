@@ -1,23 +1,5 @@
 extends layout
 
-block head
-	meta(property='og:type' content='video')
-	meta(property='og:description' content='m4atest')
-	meta(property='og:url' content='https://myapp-chuangyuming.rhcloud.com/m4atest/m4atest.html')
-	meta(property='og:title' content='sing-n-share')
-	meta(property='og:image' content='http://myapp-chuangyuming.rhcloud.com/m4atest/53bbde7e108dc6e5251dbe1e_large.png')
-	meta(property='og:image:secure_url' content='https://myapp-chuangyuming.rhcloud.com/m4atest/53bbde7e108dc6e5251dbe1e_large.png')
-	meta(property='og:site_name' content='sing-n-share')
-	meta(property='og:video:height' content='360')
-	meta(property='og:video:width' content='640')
-	meta(property='og:video:type' content='application/x-shockwave-flash')
-	meta(property='og:video' content='http://ogtest-chiahao.rhcloud.com/views/test.html')
-	meta(property="og:video:secure_url" content="https://ogtest-chiahao.rhcloud.com/views/test.html")
-	meta(property="fb:admins" content="100003217322730")
-	meta(property="fb:app_id" content="326599994099864")
-
 block content
-	h1 #{title}
-	p Welcome to #{title}
-	p #{message}
-
+  h1= title
+  p Welcome to #{title}

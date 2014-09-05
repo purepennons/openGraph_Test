@@ -3,7 +3,12 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index', { title: 'Express', message: 'test', type: 'audio' });
+	console.log(req.secure);
+	if(req.secure){
+		res.render('index', { title: 'Express' });
+	}else{
+  	res.redirect(301, 'https://localhost:8888/')
+	}
 });
 
 module.exports = router;
